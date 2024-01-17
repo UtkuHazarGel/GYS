@@ -1,27 +1,27 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 
+
 export default function MenuItem({ children }) {
   return (
-    <TouchableOpacity style={styles.menuItem}>
+    <View style={styles.menuItem}>
       <Text style={styles.menuItemText}>{children}</Text>
-    </TouchableOpacity>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   menuItem: {
-    marginHorizontal: 0,
-    
     flex: 1,
-    padding: 10,
-    
+    paddingHorizontal: 20,
     borderRadius:15,
     justifyContent:"center",
-    alignItems:"center"
+    alignItems:"center",
+    paddingBottom:10
+    
   },
   menuItemText: {
-    fontSize: 18,
+    fontSize: 16,
     color:"white"
   },
 });
