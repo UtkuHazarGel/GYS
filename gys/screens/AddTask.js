@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import AddTaskForum from '../components/AddTaskForum'
 
 export default function AddTask() {
   return (
     <View>
-      <Text>Görev:</Text>
+      <AddTaskForum/>
+
     </View>
   )
 }

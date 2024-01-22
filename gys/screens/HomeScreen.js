@@ -1,4 +1,10 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import {
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import React from "react";
 import Task from "../components/Task";
 import SubMenu from "../components/SubMenu";
@@ -11,13 +17,20 @@ export default function HomeScreen({ navigation }) {
         <Title>Görevler</Title>
       </View>
       <View style={styles.taskContainer}>
-        <Task>Bu bir Görevdir!</Task>
-        <Task>Bu bir Görevdir!</Task>
-        <Task>Bu bir Görevdir!</Task>
-        <Task>Bu bir Görevdir!</Task>
-        <Task>Bu bir Görevdir!</Task>
-        <Task>Bu bir Görevdir!</Task>
-        <Task>Bu bir Görevdir!</Task>
+        <ScrollView >
+          <Task>Bu bir Görevdir!</Task>
+          <Task>Bu bir Görevdir!</Task>
+          <Task>Bu bir Görevdir!</Task>
+          <Task>Bu bir Görevdir!</Task>
+          <Task>Bu bir Görevdir!</Task>
+          <Task>Bu bir Görevdir!</Task>
+          <Task>Bu bir Görevdir! 6</Task>
+          <Task>Bu bir Görevdir! 6</Task>
+          <Task>Bu bir Görevdir! 6</Task>
+          <Task>Bu bir Görevdir! 6</Task>
+          <Task>Bu bir Görevdir! 6</Task>
+          <Task>Bu bir Görevdir! 10</Task>
+        </ScrollView>
       </View>
     </View>
   );
@@ -25,11 +38,11 @@ export default function HomeScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: "center", alignItems: "center" },
-  titleContainer: { flex: 1, width:"100%" },
+  titleContainer: { flex: 1, width: "100%" },
   taskContainer: {
     flex: 15,
-    width:"100%",
-    backgroundColor:"white",
-    
+    width: "100%",
+    backgroundColor: "white",
+    marginTop:5
   },
 });
